@@ -120,13 +120,13 @@ ValueError: Length of values (4) does not match length of index (5)
 
 Input-
 ```
->>> dict1 = {"India":"New Delhi","UK":"London","Japan":"Tokyo"}
+>>> dict1 = {"India":"NewDelhi","UK":"London","Japan":"Tokyo"}
 >>> series1 = pd.Series(dict1)
 >>> print(series1)
 ```
 Output-
 ```
-India    New Delhi
+India    NewDelhi
 UK          London
 Japan        Tokyo
 dtype: object
@@ -138,6 +138,57 @@ dtype: object
 	* Slicing
 
 ### Indexing 
+* Indexing in Series is similar to that for NumPy arrays, and is used to access the elements in a series.
 * Indexes are of two types-
-	* Positional index
-	* Labelled index
+	* Positional index-
+		* It takes an integer value that corresponds to its position in the series starting from 0.
+	* Labelled index-
+		* It just takes any user-defined label as index.
+* Following example shows the usage of Positional Index for accessing a value from the Series-
+
+Input-
+```
+>>> seriesNum = pd.Series([10,20,30])
+>>> seriesNum[2]
+```
+Output-
+```
+30
+```
+* Here, the value 30 is displayed for the positional index 2.
+* When labels are specified, we can use labels as indices while selecting values from a series, as shown below. Here, the value 3 is displayed for the labelled index Mar-
+
+Input-
+```
+>>> seriesMnths = pd.Series([2,3,4], index =  ['Feb','Mar','Apr'])
+>>> seriesMnths['Mar']
+```
+Output-
+```
+3
+```
+* In the following example, value NewDelhi is is displayed for the labelled index India-
+
+Input-
+```
+>>> seriesCapCntry = pd.Series(['NewDelhi','WashingtonDC','London','Paris'], index = ['India','USA','UK','France'])
+>>> seriesCapCntry['India']
+```
+Output-
+```
+'NewDelhi'
+```
+* We can also access an element of a list using the positional index-
+
+Input-
+```
+>>> seriesCapCntry[2]
+```
+Output-
+```
+'London'
+```
+* More than one element of a series can be accessed using a list of positional integers or a list of index labels as shown below-
+
+Input-
+```
