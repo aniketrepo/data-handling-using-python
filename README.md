@@ -7,9 +7,7 @@
 	
 # Series
 * A series is a one-dimensional array containing a sequence of vaules of any data type (int, float, list, string etc.) which by default have numeric data lables starting from zero.
-
 * The data lable associated with a particular value is called its Index. We can also assign values of other data types as index.
-
 * We can imagine a Pandas Series as a column in a spreadsheet. For example- 
 ```	
   Index	Value
@@ -40,9 +38,8 @@ Output-
 2    30
 dtype: int64
 ```
-
 * 0bserve that the output is shown in two columns -  the index is on the left and the data value is on the right.
-* If we do not explicitly specify the an index for the data values while creating a series,  then by default the indexes range from 0 to N-1 where N is the numbe of data elements.
+* If we do not explicitly specify the an index for the data values while creating a series,  then by default the indexes range from 0 to N-1 where N is the number of data elements.
 * We can also use user-defined lables to the index and use them to access elements of a series. For example-
 
 Input-
