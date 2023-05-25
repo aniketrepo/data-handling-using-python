@@ -54,7 +54,7 @@ Output-
 2    30
 dtype: int64
 ```
-* We can also use letter as indexes. For example-
+* We can also use letters as indexes. For example-
 
 Input-
 ```
