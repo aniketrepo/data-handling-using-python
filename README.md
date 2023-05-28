@@ -192,6 +192,3 @@ Output-
 
 Input-
 ```
-
-
-
