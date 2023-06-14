@@ -189,6 +189,3 @@ Output-
 'London'
 ```
 * More than one element of a series can be accessed using a list of positional integers or a list of index labels as shown below-
-
-Input-
-```
