@@ -1,13 +1,13 @@
 # Data Structure in Pandas
 * A data structure is a collection of data values and operations that can be applied to that data.
-* It enables efficient storage, retrival and modification to the data.
+* It enables efficient storage, retrieval and modification to the data.
 * Two commonly used data structures used in pandas are-
 	* Series
 	* DataFrame
 	
 # Series
-* A series is a one-dimensional array containing a sequence of vaules of any data type (int, float, list, string etc.) which by default have numeric data lables starting from zero.
-* The data lable associated with a particular value is called its Index. We can also assign values of other data types as index.
+* A series is a one-dimensional array containing a sequence of values of any data type (int, float, list, string etc.) which by default have numeric data labels starting from zero.
+* The data label associated with a particular value is called its Index. We can also assign values of other data types as index.
 * We can imagine a Pandas Series as a column in a spreadsheet. For example- 
 ```	
   Index	Value
@@ -40,7 +40,7 @@ dtype: int64
 ```
 * 0bserve that the output is shown in two columns -  the index is on the left and the data value is on the right.
 * If we do not explicitly specify the an index for the data values while creating a series,  then by default the indexes range from 0 to N-1 where N is the number of data elements.
-* We can also use user-defined lables to the index and use them to access elements of a series. For example-
+* We can also use user-defined labels to the index and use them to access elements of a series. For example-
 
 Input-
 ```
@@ -114,7 +114,7 @@ Output-
 ValueError: Length of values (4) does not match length of index (5)
 ```
 
-### Creation of Series from Dictonaries
+### Creation of Series from Dictionaries
 * We know that a dictonaries have key-value pairs, and a value can be quickly determined if its key is known.
 * Dictionary keys can be used to construct an index for a series, as shown in the example below-
 
@@ -189,4 +189,6 @@ Output-
 'London'
 ```
 * More than one element of a series can be accessed using a list of positional integers or a list of index labels as shown below-
-* 
+
+Input-
+```
